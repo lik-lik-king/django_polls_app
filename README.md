@@ -21,26 +21,16 @@ Before you start, make sure you have Python and pip installed on your machine.
 
 1.  clone the repository to your local machine: `git clone https://github.com/yourusername/yourrepository.git`
 
-2. Navigate to the project directory:
+2. Navigate to the project directory: `cd django_polls_app`
 
+3. Install the required modules: `pip install -r requirements.txt`
 
-bash
-Copy code
-cd yourrepository
-Install the required modules:
+## Running the Application
+To start the application navigate to the project directory and run: `python manage.py runserver`
 
-bash
-Copy code
-pip install -r requirements.txt
-Running the Application
-To start the application, navigate to the project directory and run:
-
-bash
-Copy code
-python manage.py runserver
 This will start the server at http://127.0.0.1:8000/.
 
-Navigate to http://127.0.0.1:8000/polls to use the application.
+ Navigate to http://127.0.0.1:8000/polls to use the application.
 
 ## Installing Python dependencies
 
@@ -66,7 +56,7 @@ DB_PASSWORD=<your database password>
 DB_HOST=<your database host>
 DB_PORT=<your database port>
 ```
-Please replace <your Django secret key>, <your database name>, <your database user>, <your database password>, <your database host>, and <your database port> with your actual values.
+Please replace the placeholders with your actual values.
 
 Do not include your .env file in any version control system. It contains sensitive data that should not be shared. If you're using git, the .env file is already included in the .gitignore file and will not be tracked.
 
