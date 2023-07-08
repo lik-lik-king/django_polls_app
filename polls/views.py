@@ -12,7 +12,19 @@ from django.template import loader
 # This model represents the questions in our application and is used to interact with the database.
 from .models import Question
 
+# We define a function called `welcome` which will be a view function. 
+# View functions in Django are what process a user's request and prepare a response.
+# This function takes one parameter, `request`, which is an instance of the class `HttpRequest`.
+
 def welcome(request):
+
+    # The function's response is created by the HttpResponse constructor.
+    # HttpResponse is a class in Django that represents an HTTP response, which is what a Django view must return.
+    # It takes a string parameter, which is the HTTP response body - the content of the response that the client (usually a web browser) will receive.
+
+    # In this case, we're returning the text "Welcome to my Django app!" as the body of our HTTP response.
+    # So when a user makes a request that is handled by this view, they will receive an HTTP response with "Welcome to my Django app!" as the content.
+
     return HttpResponse("Welcome to my Django app!")
 
 
